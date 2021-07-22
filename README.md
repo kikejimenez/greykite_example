@@ -12,3 +12,8 @@ _If you are using an older version of this template, and want to upgrade to the 
 -  If you change the name of your repo, you have to make the appropriate changes in `settings.ini`
 -  After you make changes to `settings.ini`, run `nbdev_build_lib && nbdev_clean_nbs && nbdev_build_docs` to make sure all changes are propagated appropriately.
 
+## Changes in `setting.ini`
+
+- Set lib_name and requirements in settings.ini
+- Create symbolic link: ln -s /wd/project_name /wd/nbs/
+- Install requirements: pip install $(cat settings.ini | grep -o "requirements =.*" | cut -f3- -d' ')
