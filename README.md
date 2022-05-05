@@ -25,6 +25,13 @@ _If you are using an older version of this template, and want to upgrade to the 
 
 Set up the corresponding hyperlinks and initial setting by running on project directory the `build.sh` script
 
+## Docker Jupyterlab & Nbdev
+
+```
+docker run --name ejr_container  -e NB_USER=enrique -e JUPYTER_ENABLE_LAB=yes -v $PWD:/wd -w /wd  -p 8881:8888 ejimenezr/jupylab-dev 
+```
+
+
 ## Previewing Documents Locally 
 
 It is often desirable to preview nbdev generated documentation locally before having it built and rendered by GitHub Pages.  This requires you to run Jekyll locally, which requires installing Ruby and Jekyll. Instructions on how to install Jekyll are provided [on Jekyll's site](https://jekyllrb.com/). You can run the command `make docs_serve` from the root of your repo to serve the documentation locally after calling `nbdev_build_docs` to generate the docs. 
