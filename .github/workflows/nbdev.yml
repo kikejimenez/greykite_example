@@ -1,5 +1,7 @@
 name: nbdev 
-on: [push, pull_request]
+on:
+  workflow_call:
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
