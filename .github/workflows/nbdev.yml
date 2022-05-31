@@ -1,4 +1,4 @@
-name: nbdev 
+name: nbdev git diff
 on:
   push:
   workflow_call:
