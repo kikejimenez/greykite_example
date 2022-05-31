@@ -1,5 +1,6 @@
 name: nbdev 
 on:
+  push:
   workflow_call:
  
 jobs:
